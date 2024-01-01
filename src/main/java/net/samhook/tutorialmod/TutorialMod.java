@@ -25,7 +25,6 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
